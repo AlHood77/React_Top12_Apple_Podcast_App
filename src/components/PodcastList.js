@@ -9,11 +9,13 @@ class PodcastList extends Component {
         const podcastNodes = this.props.podcasts.map(podcast => {
             return (
                 <Podcast classname='cards'
+                    key={podcast.id}
                     name={podcast.name}
                     artworkUrl100={podcast.artworkUrl100}
                     artistName={podcast.artistName}
-                    genres={podcast.genres[0].name}
+                    genres={podcast.genres[0]}
                     url={podcast.url}
+                    // artistUrl={podcast.artistUrl}
 
 
                 >

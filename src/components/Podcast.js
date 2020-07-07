@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Podcast = ({artworkUrl100, name, artistName, url }) => (
+const Podcast = ({ artworkUrl100, name, artistName, genres, url }) => (
     
     
         
@@ -10,11 +10,13 @@ const Podcast = ({artworkUrl100, name, artistName, url }) => (
                         <img src={artworkUrl100} alt=""/>
                     </div>
                     <div className="card-back">
-                        <h1>{name}</h1>
+                        <h2>{name}</h2>
                         <ul>
                             <li>{artistName}</li>
-                            <li><a target="_blank" href={url}>Podcast Link</a></li>
+                            <li>{genres.name}</li>
+                            <li><a target="_blank" href={url}>Get Episodes Here</a></li>
                         </ul>
+                            
                         
                     </div>
                 </div>

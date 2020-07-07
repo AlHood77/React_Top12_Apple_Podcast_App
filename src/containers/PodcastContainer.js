@@ -21,7 +21,7 @@ class PodcastContainer extends Component {
     render() {
         return (
             <>
-            <h1>Top 12 UK Podcasts</h1>
+            <h1>Top 12 &#x1F1EC;&#x1F1E7; Podcasts </h1>
             <div>
                 <PodcastList podcasts={this.state.podcasts}></PodcastList>    
                 </div>
