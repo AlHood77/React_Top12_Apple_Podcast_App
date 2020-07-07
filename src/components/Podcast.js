@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Podcast extends Component {
+const Podcast = ({artworkUrl100, name, artistName, url }) => (
     
-    render() {
-        return (
+    
+        
             <div className="card">
                 <div className="card-inner">
                     <div className="card-front">
-                        <img src={this.props.artworkUrl100} alt=""/>
+                        <img src={artworkUrl100} alt=""/>
                     </div>
                     <div className="card-back">
-                        <h1>{this.props.name}</h1>
+                        <h1>{name}</h1>
                         <ul>
-                            <li>{this.props.artistName}</li>
-                            <li>{this.props.genres[0].name}</li>
-                            <li><a target="_blank" href={this.props.url}>Podcast Link</a></li>
+                            <li>{artistName}</li>
+                            <li><a target="_blank" href={url}>Podcast Link</a></li>
                         </ul>
                         
                     </div>
                 </div>
             </div>
             
-        );
-    }
-}
+       
+    
+)
 
 export default Podcast;
