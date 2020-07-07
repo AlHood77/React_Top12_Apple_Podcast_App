@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Web App showing top 12 podcasts in the UK using the Apple RSS Generator API
+
+![screenshot](src/images/Screenshot_podcast.png)
 
 ## Available Scripts
 
