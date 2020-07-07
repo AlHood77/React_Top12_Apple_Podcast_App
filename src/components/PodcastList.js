@@ -12,6 +12,9 @@ class PodcastList extends Component {
                     name={podcast.name}
                     artworkUrl100={podcast.artworkUrl100}
                     artistName={podcast.artistName}
+                    genres={podcast.genres[0].name}
+                    url={podcast.url}
+
 
                 >
                 </Podcast>

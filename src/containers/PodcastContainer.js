@@ -11,7 +11,7 @@ class PodcastContainer extends Component {
     }
 
     componentDidMount() {
-        const url = 'https://cors-anywhere.herokuapp.com/https://rss.itunes.apple.com/api/v1/gb/podcasts/top-podcasts/all/10/non-explicit.json'
+        const url = 'https://cors-anywhere.herokuapp.com/https://rss.itunes.apple.com/api/v1/gb/podcasts/top-podcasts/all/12/non-explicit.json'
 
         fetch(url)
             .then(res => res.json())
@@ -21,7 +21,7 @@ class PodcastContainer extends Component {
     render() {
         return (
             <>
-            <h1>Top UK Podcasts</h1>
+            <h1>Top 12 UK Podcasts</h1>
             <div>
                 <PodcastList podcasts={this.state.podcasts}></PodcastList>    
                 </div>
