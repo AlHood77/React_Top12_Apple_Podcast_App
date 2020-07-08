@@ -1,5 +1,7 @@
 Web App showing top 12 podcasts in the UK using the Apple RSS Generator API
 
+Suggested improvements: Add search by genre option.
+
 ![screenshot](src/images/Screenshot_podcast.png)
 
 ## Available Scripts
